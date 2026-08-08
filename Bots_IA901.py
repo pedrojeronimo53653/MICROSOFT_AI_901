@@ -38,7 +38,7 @@ if "messages" not in st.session_state:
 # 💡 DICA PARA A AULA 2: O Endpoint Inteligente
 # Note que o endereço termina com '/openai/v1'. Isso avisa aos servidores da 
 # Microsoft que vamos conversar no padrão universal, dispensando o 'api_version'.
-endpoint = "https://marcelomaffeis-05082026-resource.services.ai.azure.com/openai/v1"
+endpoint = "https://pedrojeronimo6-2076-resource.openai.azure.com/openai/v1"
 deployment_name = "gpt-5.4-mini"
 
 # 💡 DICA PARA A AULA 3: Segurança de Credenciais
@@ -46,7 +46,7 @@ deployment_name = "gpt-5.4-mini"
 # O Streamlit oferece o st.secrets para gerenciar isso com segurança.
 client = OpenAI(
     base_url=endpoint,
-    api_key="6t2pTNsmNafDyo53MDAFIrvvQRBZXP7dLcr5j3TLxMS34LQVq3ZUJQQJ99CHACHYHv6XJ3w3AAAAACOGT7os" # Recomende aos alunos usar: st.secrets["AZURE_API_KEY"]
+    api_key="DquGm3YBknlBlCrw4NLb3wzxAYO3JI54ITIBuIOE6m1pSNsEpJg3JQQJ99CHACZoyfiXJ3w3AAAAACOGRJQY" # Recomende aos alunos usar: st.secrets["AZURE_API_KEY"]
 )
 
 # Definição da Ferramenta para o modelo (Function Calling)
